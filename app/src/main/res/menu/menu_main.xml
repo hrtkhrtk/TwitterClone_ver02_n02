@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="hrtkhrtk.twitterclone_ver02.MainActivity">
+    <item
+        android:id="@+id/action_SettingActivity"
+        android:orderInCategory="100"
+        android:title="設定"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_PurchasingActivity"
+        android:orderInCategory="101"
+        android:title="購入ページ"
+        app:showAsAction="never" />
+</menu>

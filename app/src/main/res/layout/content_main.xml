@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/weatherInformation"
+        android:background="#cccccc"
+        android:textAppearance="?android:attr/textAppearanceSmall">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="今日の"
+            android:id="@+id/others_n01"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="city"
+            android:id="@+id/cityTextView"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/others_n01"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="の天気は"
+            android:id="@+id/others_n02"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/cityTextView"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="unknown"
+            android:id="@+id/weatherTextView"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/others_n02"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="post検索"
+        android:id="@+id/searchWindow"
+        android:layout_below="@+id/weatherInformation"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_button"
+        android:text="search"
+        android:textColor="@color/colorButtonText"
+        android:visibility="gone"
+        android:layout_below="@+id/searchWindow"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:layout_below="@+id/searchButton"/>
+</RelativeLayout>

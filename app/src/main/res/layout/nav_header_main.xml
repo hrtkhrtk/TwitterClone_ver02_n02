@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="30dp"
+    android:background="@color/colorPrimaryDark">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:layout_margin="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="nickname"
+        android:id="@+id/nicknameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="id_for_search"
+        android:id="@+id/idForSearchTextView"
+        android:layout_below="@+id/nicknameTextView"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="456"
+        android:id="@+id/followingsNumberTextView"
+        android:layout_below="@+id/idForSearchTextView"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="followings"
+        android:id="@+id/others_n01"
+        android:layout_below="@+id/idForSearchTextView"
+        android:layout_toEndOf="@+id/followingsNumberTextView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="789"
+        android:id="@+id/followersNumberTextView"
+        android:layout_below="@+id/idForSearchTextView"
+        android:layout_toEndOf="@+id/others_n01"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="followers"
+        android:layout_below="@+id/idForSearchTextView"
+        android:layout_toEndOf="@+id/followersNumberTextView"/>
+
+</RelativeLayout>
